@@ -3,9 +3,7 @@ import './App.css';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 
-function App() {
-  if (Math.random() > 0.5) return null;
-
+function App() 
   const [count, setCount] = useState(0);
 
   return (
