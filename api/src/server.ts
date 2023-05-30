@@ -1,5 +1,7 @@
 import express, { Request, Response } from 'express';
 
+const port = process.env.PORT || 3000;
+
 const app = express();
 
 function handleRequest(req: Request, res: Response) {
@@ -12,4 +14,4 @@ app.get('/api/message', (req, res) => {
   res.json('Hello from the API!');
 });
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(port, () => console.log('Server running on port ' + port));
